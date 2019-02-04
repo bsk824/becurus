@@ -261,156 +261,277 @@
 					<button type="button" class="btnMenu" onclick="$('#container').toggleClass('menuOff')">메뉴</button>
 					<p class="loc"><span>운영정보</span> <span>통제기간/유형설정</span></p>
 				</div>
+				<nav class="tabMenu">
+					<ul>
+						<li class="active"><a href="#">대쉬보드</a></li>
+						<li><a href="#">모니터링</a></li>
+						<li><a href="#">감사일지</a></li>
+					</ul>
+				</nav>
 
 				<div class="contBody">
 
-					<section class="controlPeriod">
-						<h2 class="tit">통제기간</h2>
-						<div class="sel">
-							<button type="button" class="btn" onclick="dropDown(this);">통제기간 13 (<span class="ing">진행중</span>)</button>
-							<ul class="list">
-								<li><a href="#">통제기간 12 (<span class="end">종료</span>)</a></li>
-								<li><a href="#">통제기간 11 (<span class="end">종료</span>)</a></li>
-								<li><a href="#">통제기간 10 (<span class="end">종료</span>)</a></li>
-								<li><a href="#">통제기간 09 (<span class="end">종료</span>)</a></li>
-							</ul>
+					<section class="section">
+						<section class="controlPeriod">
+							<h2 class="tit">통제기간</h2>
+							<div class="sel">
+								<button type="button" class="btn" onclick="dropDown(this);">통제기간 13 (<span class="ing">진행중</span>)</button>
+								<ul class="list">
+									<li><a href="#">통제기간 12 (<span class="end">종료</span>)</a></li>
+									<li><a href="#">통제기간 11 (<span class="end">종료</span>)</a></li>
+									<li><a href="#">통제기간 10 (<span class="end">종료</span>)</a></li>
+									<li><a href="#">통제기간 09 (<span class="end">종료</span>)</a></li>
+								</ul>
+							</div>
+						</section>
+
+						<div class="dashboardTopBox">
+							<section class="box1">
+								<div class="inner">
+									<h2 class="tit">계정과목</h2>
+									<ul class="list">
+										<li>양적<span>84</span></li>
+										<li>질적<span>26</span></li>
+									</ul>
+								</div>
+							</section>
+							<section class="box2">
+								<div class="inner">
+									<h2 class="tit">프로세스</h2>
+									<ul class="list">
+										<li>SUB PROCESS<span>84</span></li>
+									</ul>
+								</div>
+							</section>
+							<section class="box3">
+								<div class="inner">
+									<h2 class="tit">통제항목</h2>
+									<ul class="list">
+										<li>ELC<span>93</span></li>
+										<li>PLC<span>48</span></li>
+									</ul>
+								</div>
+							</section>
+							<section class="box4">
+								<div class="inner">
+									<h2 class="tit">주석정보</h2>
+									<ul class="list">
+										<li>유의한주석<span>84</span></li>
+										<li>일반주석<span>26</span></li>
+									</ul>
+								</div>
+							</section>
+							<section class="box5">
+								<div class="inner">
+									<h2 class="tit">MRC &amp; IPE</h2>
+									<ul class="list">
+										<li>ELC<span>84</span></li>
+										<li>PLC<span>26</span></li>
+									</ul>
+								</div>
+							</section>
+						</div>
+					</section>
+
+					<section class="section">
+						<h2 class="subTitle">진행상태</h2>
+						<ul class="progress">
+							<li class="com"><span>플래닝</span></li>
+							<li class="com"><span>스코핑</span></li>
+							<li class="com"><span>배포</span></li>
+							<li class="com"><span>설계평가</span></li>
+							<li class="pass"><span>운영평가</span></li>
+							<li class="ing"><span>미비점</span></li>
+							<li><span>보고</span></li>
+						</ul>
+					</section>
+
+					<div class="pieCharthWrap">
+						<div class="box1">
+							<section class="section">
+								<h2 class="subTitle">평가진행율</h2>
+								<div>
+									<img src="resource/images/sample/chart_sample1.gif" alt="">
+								</div>
+							</section>
+						</div>
+						<div class="box2">
+							<section class="section">
+								<h2 class="subTitle">설계효과성 평가</h2>
+								<div>
+									<img src="resource/images/sample/chart_sample2.gif" alt="">
+								</div>
+							</section>
+						</div>
+						<div class="box2">
+							<section class="section">
+								<h2 class="subTitle">운영효과성 평가</h2>
+								<div>
+									<img src="resource/images/sample/chart_sample3.gif" alt="">
+								</div>
+							</section>
+						</div>
+						<div class="box1">
+							<section class="section">
+								<h2 class="subTitle">미비점 관리</h2>
+								<div>
+									<img src="resource/images/sample/chart_sample1.gif" alt="">
+								</div>
+							</section>
+						</div>
+					</div>
+
+					<section class="section">
+						<h2 class="subTitle">모니터링</h2>
+						<div>
+							<img src="resource/images/sample/graph_sample1.gif" alt="" style="width: 100%;">
 						</div>
 					</section>
 					
-					<h2 class="subTitle">내부 회계관리 추진일정</h2>
-					<div class="mainSch">
-						<section class="box1">
-							<div class="inner">
-								<h3 class="tit">설계효과성 평가</h3>
-								<p class="date">2019.01.22</p>
-								<ul class="list">
-									<li>전체 <span>15</span></li>
-									<li>주문 <span>0</span></li>
-									<li>완료 <span>0</span></li>
-								</ul>
-							</div>
-						</section>
-						<section class="box2">
-							<div class="inner">
-								<h3 class="tit">운영효과성 평가</h3>
-								<p class="date">2019.01.22</p>
-								<ul class="list">
-									<li>전체 <span>15</span></li>
-									<li>주문 <span>0</span></li>
-									<li>완료 <span>0</span></li>
-								</ul>
-							</div>
-						</section>
-						<section class="box3">
-							<div class="inner">
-								<h3 class="tit">이슈관리 및 결과보고</h3>
-								<p class="date">2019.01.22</p>
-								<ul class="list">
-									<li>전체 <span>15</span></li>
-									<li>주문 <span>0</span></li>
-									<li>완료 <span>0</span></li>
-								</ul>
-								<div class="etc">
-									<strong class="subTit">이슈(예외)사항</strong>
-									<ul class="list">
-										<li>전체 <span>0</span></li>
-										<li>완료 <span>0</span></li>
-									</ul>
+					<section class="section boxItem2">
+						<div class="box">
+							<h3 class="subTitle">감사일지</h3>
+							<div class="scrollTable">
+								<div class="thead">
+									<table class="tableType">
+										<colgroup>
+											<col style="width:20%;">
+											<col style="width:15%;">
+											<col style="width:15%;">
+											<col style="width:35%;">
+											<col style="width:15%;">
+										</colgroup>
+										<tr>
+											<th scope="col">작성일시</th>
+											<th scope="col">감사원명</th>
+											<th scope="col">카테고리</th>
+											<th scope="col">감사의견</th>
+											<th scope="col">상세정보</th>
+										</tr>
+									</table>
 								</div>
+								<div class="tbody" style="max-height: 288px;">
+									<table class="tableType">
+										<colgroup>
+											<col style="width:20%;">
+											<col style="width:15%;">
+											<col style="width:15%;">
+											<col style="width:35%;">
+											<col style="width:15%;">
+										</colgroup>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+									</table>
+								</div>
+								<p>전체항목 : 0</p>
 							</div>
-						</section>
-						<section class="box4">
-							<div class="inner">
-								<h3 class="tit">CEO/CFO 인증</h3>
-								<p class="date">2019.01.22</p>
-								<ul class="list">
-									<li>전체 <span>15</span></li>
-									<li>주문 <span>0</span></li>
-									<li>완료 <span>0</span></li>
-								</ul>
+						</div>
+						<div class="box">
+							<h3 class="subTitle">감사원 접속이력</h3>
+							<div class="scrollTable">
+								<div class="thead">
+									<table class="tableType">
+										<colgroup>
+											<col style="width:33.33%;">
+											<col style="width:33.33%;">
+											<col style="width:33.33%;">
+										</colgroup>
+										<tr>
+											<th scope="col">접속일시</th>
+											<th scope="col">감사원 ID</th>
+											<th scope="col">감사원명</th>
+										</tr>
+									</table>
+								</div>
+								<div class="tbody" style="max-height: 288px;">
+									<table class="tableType">
+										<colgroup>
+											<col style="width:33.33%;">
+											<col style="width:33.33%;">
+											<col style="width:33.33%;">
+										</colgroup>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+									</table>
+								</div>
+								<p>전체항목 : 0</p>
 							</div>
-						</section>
-					</div>
-
-					<h2 class="subTitle">운영자님의 수행업무</h2>
-					<div class="mainTable">
-						<table class="tableType">
-							<colgroup>
-								<col style="width:14%;">
-								<col style="width:14%;">
-								<col style="width:14%;">
-								<col style="width:14%;">
-								<col style="width:14%;">
-								<col style="width:14%;">
-								<col style="width:14%;">
-								<col style="width:14%;">
-							</colgroup>
-							<thead>
-								<tr>
-									<th scope="col" rowspan="2">구분</th>
-									<th scope="col" rowspan="2">미작성 항목수</th>
-									<th scope="col" rowspan="2">작성중 항목수</th>
-									<th scope="col" colspan="3">결제상신 항목수</th>
-									<th scope="col" rowspan="2">결제대상 항목수</th>
-								</tr>
-								<tr>
-									<th scope="col">결제진행</th>
-									<th scope="col">결제반려</th>
-									<th scope="col">결제완료</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>val</td>
-									<td>val</td>
-									<td>val</td>
-									<td>val</td>
-									<td>val</td>
-									<td>val</td>
-									<td>val</td>
-								</tr>
-								<tr>
-									<td>val</td>
-									<td>val</td>
-									<td>val</td>
-									<td>val</td>
-									<td>val</td>
-									<td>val</td>
-									<td>val</td>
-								</tr>
-								<tr>
-									<td>val</td>
-									<td>val</td>
-									<td>val</td>
-									<td>val</td>
-									<td>val</td>
-									<td>val</td>
-									<td>val</td>
-								</tr>
-								<tr>
-									<td>val</td>
-									<td>val</td>
-									<td>val</td>
-									<td>val</td>
-									<td>val</td>
-									<td>val</td>
-									<td>val</td>
-								</tr>
-								<tr>
-									<td>val</td>
-									<td>val</td>
-									<td>val</td>
-									<td>val</td>
-									<td>val</td>
-									<td>val</td>
-									<td>val</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
+						</div>
+					</section>
 
 				</div>
-
 			</div>
 			<!-- //contents -->
 		</div>
