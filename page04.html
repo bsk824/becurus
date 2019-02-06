@@ -265,23 +265,46 @@
 				<div class="contBody">
 					<section class="section">
 						<h2 class="subTitle">전자통제 설계문서</h2>
-						<section class="controlPeriod">
-							<h2 class="tit">통제기간</h2>
-							<div class="sel">
-								<button type="button" class="btn" onclick="dropDown(this);">통제기간 13 (<span class="ing">진행중</span>)</button>
-								<ul class="list">
-									<li><a href="#">통제기간 12 (<span class="end">종료</span>)</a></li>
-									<li><a href="#">통제기간 11 (<span class="end">종료</span>)</a></li>
-									<li><a href="#">통제기간 10 (<span class="end">종료</span>)</a></li>
-									<li><a href="#">통제기간 09 (<span class="end">종료</span>)</a></li>
-								</ul>
-							</div>
-						</section>	
+						<div class="searchTable">
+							<table>
+								<colgroup>
+									<col style="width:86px">
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">통제기간</th>
+										<td class="controlPeriod">
+											<div class="sel" style="max-width:440px;">
+												<button type="button" class="btn" onclick="dropDown(this);">통제기간 13 (<span class="ing">진행중</span>)</button>
+												<ul class="list">
+													<li><a href="#">통제기간 12 (<span class="end">종료</span>)</a></li>
+													<li><a href="#">통제기간 11 (<span class="end">종료</span>)</a></li>
+													<li><a href="#">통제기간 10 (<span class="end">종료</span>)</a></li>
+													<li><a href="#">통제기간 09 (<span class="end">종료</span>)</a></li>
+												</ul>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</section>
 
 					<section class="section boxItem2">
 						<div class="box" style="width:40%;">
-							<p>전체 항목: 4 (선택 항목: 1)</p>
+							<div class="selList">
+								<h3 class="tit">구성요소</h3>
+								<div class="list">
+									<ul>
+										<li class="on"><button type="button">통제환경</button></li>
+										<li><button type="button">위험평가</button></li>
+										<li><button type="button">정보 및 의사소통</button></li>
+										<li><button type="button">모니터링</button></li>
+									</ul>
+								</div>
+								<p class="total">전체 항목: 4 (선택 항목: 1)</p>
+							</div>
 						</div>
 						<div class="box" style="width:60%;">
 							<div>
@@ -292,7 +315,7 @@
 									</colgroup>
 									<tbody>
 										<tr>
-											<th scope="row">통제기간</th>
+											<th scope="row">문서담당자</th>
 											<td>
 												<input type="text" class="inputTxt" style="width:30%;">
 												<input type="text" class="inputTxt" style="width:30%;">

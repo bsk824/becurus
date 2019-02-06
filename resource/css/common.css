@@ -216,7 +216,7 @@ textarea {
 .tableTypeInput th,
 .tableTypeInput td {
 	text-align: left;
-	padding: 10px;
+	padding: 5px;
 }
 .tableTypeInput th {padding-left:20px;}
 .tableTypeInput tr:hover td {background: #fff;}

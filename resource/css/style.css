@@ -415,6 +415,7 @@
 	padding: 0 35px;
 	background: #f5f7fa;
 }
+.section .searchTable:last-child {margin-bottom: -30px;}
 .searchTable th, 
 .searchTable td {border-top: 1px solid #dee2ea;}
 .searchTable tr:first-child th,
@@ -493,4 +494,29 @@
 .btnControl .btnDown:after {
 	top: 6px;
 	border-top: 9px solid #757575;
+}
+
+.selList .tit {
+	background: #f9f9f9;
+	border: 1px solid #c2c2c2;
+	padding: 9px 30px;
+}
+.selList .list {
+	margin: -1px 0 0;
+	height: 322px;
+	overflow: auto;
+	border: 1px solid #c2c2c2;
+}
+.selList .list button {
+	width: 100%;
+	padding: 9px 30px;
+	text-align: left;
+}
+.selList .list .on button,
+.selList .list button:active {
+	background: #c4dbeb;
+	font-weight: bold;
+}
+.selList .total {
+	margin: 10px 0 0 30px;
 }
