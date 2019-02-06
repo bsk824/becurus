@@ -16,12 +16,95 @@ legend, caption, .hidden {position:absolute;z-index:-1;font:0/0 a;}
 address, em {font-style:normal;}
 button {overflow:visible;cursor:pointer;background:none;border:0;border-radius:0;letter-spacing:-1px;}
 button::-moz-focus-inner {padding:0;border:0;}
-article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section {display:block;}
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, section {display:block;}
 
-/* btnType */
+select {
+	width: 440px;
+	height: 34px;
+	padding-left: 15px;
+	background: #fff url(../images/bg_sel.png) no-repeat 100% 50%;
+	border: 1px solid #dddce1;
+	-webkit-appearance: none;
+	vertical-align: middle;
+}
+.inputTxt {
+	height: 34px;
+	padding: 0 15px;
+	border: 1px solid #dddce1;
+	vertical-align: middle;
+	box-sizing: border-box;
+}
+textarea {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 15px;
+	border: 1px solid #dddce1;
+	resize: none;
+	vertical-align: top;
+}
+.inputChk {cursor: pointer;}
+.inputChk input {
+	position: absolute;
+	visibility: hidden;
+}
+.inputChk i {
+	display: inline-block;
+	width: 18px; height: 18px;
+	vertical-align: middle;
+	box-sizing: border-box;
+	background: #fff url(../images/bg_input_chk.png) no-repeat;
+	border: 1px solid #dcdcdc;
+}
+.inputChk input:checked + i {
+	background-position: -18px 0;
+	border: 0;
+}
+.inputChk span {
+	display: inline-block;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+.inputChk ~ .inputChk {margin-left: 40px;}
+.inputRadio {cursor: pointer;}
+.inputRadio input {
+	position: absolute;
+	visibility: hidden;
+}
+.inputRadio i {
+	display: inline-block;
+	width: 16px; height: 16px;
+	vertical-align: middle;
+	box-sizing: border-box;
+	background: #fff;
+	border: 1px solid #a9b0ba;
+	border-radius: 50%;
+}
+.inputRadio input:checked + i {
+	border: 4px solid #4399c5;
+}
+.inputRadio span {
+	display: inline-block;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+.inputRadio ~ .inputRadio {margin-left: 40px;}
+
+/* btn */
+.btnWrap {
+	margin: 20px 0 0;
+	text-align: center;
+}
+.btnWrap:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.btnWrap .left {float: left;}
+.btnWrap .right {float: right;}
 [class*="btnType"] {
 	display: inline-block;
 	box-sizing: border-box;
+	vertical-align: middle;
 }
 .btnTypeS {
 	height: 30px;
@@ -32,9 +115,48 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav
 	color: #777;
 	font-size: 12px;
 }
+.btnTypeS1 {
+	height: 34px;
+	line-height: 34px;
+	padding: 0 12px;
+	background: #979aa4;
+	color: #fff;
+
+}
+.btnTypeM {
+	min-width: 113px;
+	height: 38px;
+	line-height: 38px;
+	background: #4399c5;
+	border: 1px solid #3886ad;
+	color: #fff;
+}
+.btnTypeM1 {
+	min-width: 113px;
+	height: 38px;
+	line-height: 38px;
+	background: #fff;
+	border: 1px solid #7d888e;
+	color: #262626;
+}
+.btnTypeM2 {
+	padding: 0 18px;
+	height: 38px;
+	line-height: 38px;
+	background: #fff;
+	border: 1px solid #bcc4c8;
+	color: #6a6a6a;
+}
 .btnLogout {
 	padding-left: 40px;
 	background: url(../images/icon/icon_logout.png) no-repeat 13px 50%;
+}
+.btnCal {
+	width: 24px;
+	height: 24px;
+	background: url(../images/btn_cal.png) no-repeat;
+	font: 0/0 a;
+	vertical-align: middle;
 }
 
 /* title */
@@ -42,6 +164,17 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav
 	margin: 40px 0 15px;
 	font-size: 18px;
 	color: #333;
+}
+.subTitle2 {
+	margin: 0 0 13px;
+	color: #333;
+	font-size: 16px;
+	font-weight: normal;
+}
+.subTitle3 {
+	margin: 0 0 13px;
+	color: #4c4c4c;
+	font-size: 16px;
 }
 
 /* tableType */
@@ -68,20 +201,26 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav
 [class*="tableType"] .center td {
 	text-align: center;
 }
-[class*="tableType"] .left {
-	text-align: left;
-}
+[class*="tableType"] .left,
 [class*="tableType"] .left th,
 [class*="tableType"] .left td {
+	padding: 0 25px;
 	text-align: left;
 }
-[class*="tableType"] .right {
-	text-align: right;
-}
+[class*="tableType"] .right,
 [class*="tableType"] .right th,
 [class*="tableType"] .right td {
+	padding: 0 25px;
 	text-align: right;
 }
+.tableTypeInput th,
+.tableTypeInput td {
+	text-align: left;
+	padding: 10px;
+}
+.tableTypeInput th {padding-left:20px;}
+.tableTypeInput tr:hover td {background: #fff;}
+
 .scrollTable .thead {
 	position: relative;
 	background: #f9f9f9;
@@ -97,10 +236,17 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav
 	overflow-y: scroll;
 	border: 1px solid #c2c2c2;
 }
+.tableResult {
+	margin: -1px 0 0;
+	padding: 8px 30px;
+	border: 1px solid #c2c2c2;
+	text-align: right;
+	font-weight: bold;
+}
 
 /* layout */
 #wrap {
-	/* min-width: 1600px; */
+	min-width: 1600px;
 	position: absolute;
 	width: 100%;
 	min-height: 100%;
@@ -258,8 +404,8 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav
 	clear: both;
 }
 .section .subTitle {
-	font-size: 16px;
-	color: #4c4c4c;
+	font-size: 21px;
+	font-weight: normal;
 }
 .boxItem2 {
 	padding: 30px 13px;

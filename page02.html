@@ -259,275 +259,317 @@
 
 				<div class="contHead">
 					<button type="button" class="btnMenu" onclick="$('#container').toggleClass('menuOff')">메뉴</button>
-					<p class="loc"><span>운영정보</span> <span>통제기간/유형설정</span></p>
+					<p class="loc"><span>운영정보</span> <span>기준정보설정</span> <span>부서/사용자관리</span> <span>사용자별권한관리</span></p>
 				</div>
-				<nav class="tabMenu">
-					<ul>
-						<li class="active"><a href="#">대쉬보드</a></li>
-						<li><a href="#">모니터링</a></li>
-						<li><a href="#">감사일지</a></li>
-					</ul>
-				</nav>
 
 				<div class="contBody">
 
-					<section class="section">
-						<section class="controlPeriod">
-							<h2 class="tit">통제기간</h2>
-							<div class="sel">
-								<button type="button" class="btn" onclick="dropDown(this);">통제기간 13 (<span class="ing">진행중</span>)</button>
-								<ul class="list">
-									<li><a href="#">통제기간 12 (<span class="end">종료</span>)</a></li>
-									<li><a href="#">통제기간 11 (<span class="end">종료</span>)</a></li>
-									<li><a href="#">통제기간 10 (<span class="end">종료</span>)</a></li>
-									<li><a href="#">통제기간 09 (<span class="end">종료</span>)</a></li>
-								</ul>
-							</div>
-						</section>
-
-						<div class="dashboardTopBox">
-							<section class="box1">
-								<div class="inner">
-									<h2 class="tit">계정과목</h2>
-									<ul class="list">
-										<li>양적<span>84</span></li>
-										<li>질적<span>26</span></li>
-									</ul>
-								</div>
-							</section>
-							<section class="box2">
-								<div class="inner">
-									<h2 class="tit">프로세스</h2>
-									<ul class="list">
-										<li>SUB PROCESS<span>84</span></li>
-									</ul>
-								</div>
-							</section>
-							<section class="box3">
-								<div class="inner">
-									<h2 class="tit">통제항목</h2>
-									<ul class="list">
-										<li>ELC<span>93</span></li>
-										<li>PLC<span>48</span></li>
-									</ul>
-								</div>
-							</section>
-							<section class="box4">
-								<div class="inner">
-									<h2 class="tit">주석정보</h2>
-									<ul class="list">
-										<li>유의한주석<span>84</span></li>
-										<li>일반주석<span>26</span></li>
-									</ul>
-								</div>
-							</section>
-							<section class="box5">
-								<div class="inner">
-									<h2 class="tit">MRC &amp; IPE</h2>
-									<ul class="list">
-										<li>ELC<span>84</span></li>
-										<li>PLC<span>26</span></li>
-									</ul>
-								</div>
-							</section>
-						</div>
-					</section>
-
-					<section class="section">
-						<h2 class="subTitle3">진행상태</h2>
-						<ul class="progress">
-							<li class="com"><span>플래닝</span></li>
-							<li class="com"><span>스코핑</span></li>
-							<li class="com"><span>배포</span></li>
-							<li class="com"><span>설계평가</span></li>
-							<li class="pass"><span>운영평가</span></li>
-							<li class="ing"><span>미비점</span></li>
-							<li><span>보고</span></li>
-						</ul>
-					</section>
-
-					<div class="pieCharthWrap">
-						<div class="box1">
-							<section class="section">
-								<h2 class="subTitle3">평가진행율</h2>
-								<div>
-									<img src="resource/images/sample/chart_sample1.gif" alt="">
-								</div>
-							</section>
-						</div>
-						<div class="box2">
-							<section class="section">
-								<h2 class="subTitle3">설계효과성 평가</h2>
-								<div>
-									<img src="resource/images/sample/chart_sample2.gif" alt="">
-								</div>
-							</section>
-						</div>
-						<div class="box2">
-							<section class="section">
-								<h2 class="subTitle3">운영효과성 평가</h2>
-								<div>
-									<img src="resource/images/sample/chart_sample3.gif" alt="">
-								</div>
-							</section>
-						</div>
-						<div class="box1">
-							<section class="section">
-								<h2 class="subTitle3">미비점 관리</h2>
-								<div>
-									<img src="resource/images/sample/chart_sample1.gif" alt="">
-								</div>
-							</section>
-						</div>
-					</div>
-
-					<section class="section">
-						<h2 class="subTitle3">모니터링</h2>
-						<div>
-							<img src="resource/images/sample/graph_sample1.gif" alt="" style="width: 100%;">
-						</div>
-					</section>
-					
 					<section class="section boxItem2">
+						<h2 class="subTitle">평가기간/유형설정</h2>
 						<div class="box">
-							<h3 class="subTitle2">감사일지</h3>
 							<div class="scrollTable">
 								<div class="thead">
 									<table class="tableType">
 										<colgroup>
-											<col style="width:20%;">
-											<col style="width:15%;">
-											<col style="width:15%;">
-											<col style="width:35%;">
-											<col style="width:15%;">
+											<col style="width:8%;">
+											<col style="width:25%;">
+											<col>
+											<col style="width:25%;">
 										</colgroup>
 										<tr>
-											<th scope="col">작성일시</th>
-											<th scope="col">감사원명</th>
-											<th scope="col">카테고리</th>
-											<th scope="col">감사의견</th>
-											<th scope="col">상세정보</th>
+											<th scope="col"></th>
+											<th scope="col">통제기간코드</th>
+											<th scope="col">통제기간명</th>
+											<th scope="col">최종보고일</th>
 										</tr>
 									</table>
 								</div>
-								<div class="tbody" style="max-height: 288px;">
+								<div class="tbody" style="max-height: 425px;">
 									<table class="tableType">
 										<colgroup>
-											<col style="width:20%;">
-											<col style="width:15%;">
-											<col style="width:15%;">
-											<col style="width:35%;">
-											<col style="width:15%;">
+											<col style="width:8%;">
+											<col style="width:25%;">
+											<col>
+											<col style="width:25%;">
 										</colgroup>
 										<tr>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
+											<td>
+												<label class="inputChk">
+													<input type="checkbox">
+													<i></i>
+												</label>
+											</td>
+											<td>TM0035</td>
+											<td class="left">통제기간명</td>
+											<td>2019.01.28</td>
 										</tr>
 										<tr>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
+											<td>
+												<label class="inputChk">
+													<input type="checkbox">
+													<i></i>
+												</label>
+											</td>
+											<td>TM0035</td>
+											<td class="left">통제기간명</td>
+											<td>2019.01.28</td>
 										</tr>
 										<tr>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
+											<td>
+												<label class="inputChk">
+													<input type="checkbox">
+													<i></i>
+												</label>
+											</td>
+											<td>TM0035</td>
+											<td class="left">통제기간명</td>
+											<td>2019.01.28</td>
 										</tr>
 										<tr>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
+											<td>
+												<label class="inputChk">
+													<input type="checkbox">
+													<i></i>
+												</label>
+											</td>
+											<td>TM0035</td>
+											<td class="left">통제기간명</td>
+											<td>2019.01.28</td>
 										</tr>
 										<tr>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
+											<td>
+												<label class="inputChk">
+													<input type="checkbox">
+													<i></i>
+												</label>
+											</td>
+											<td>TM0035</td>
+											<td class="left">통제기간명</td>
+											<td>2019.01.28</td>
 										</tr>
 										<tr>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
+											<td>
+												<label class="inputChk">
+													<input type="checkbox">
+													<i></i>
+												</label>
+											</td>
+											<td>TM0035</td>
+											<td class="left">통제기간명</td>
+											<td>2019.01.28</td>
 										</tr>
 										<tr>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
+											<td>
+												<label class="inputChk">
+													<input type="checkbox">
+													<i></i>
+												</label>
+											</td>
+											<td>TM0035</td>
+											<td class="left">통제기간명</td>
+											<td>2019.01.28</td>
 										</tr>
 										<tr>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
+											<td>
+												<label class="inputChk">
+													<input type="checkbox">
+													<i></i>
+												</label>
+											</td>
+											<td>TM0035</td>
+											<td class="left">통제기간명</td>
+											<td>2019.01.28</td>
+										</tr>
+										<tr>
+											<td>
+												<label class="inputChk">
+													<input type="checkbox">
+													<i></i>
+												</label>
+											</td>
+											<td>TM0035</td>
+											<td class="left">통제기간명</td>
+											<td>2019.01.28</td>
+										</tr>
+										<tr>
+											<td>
+												<label class="inputChk">
+													<input type="checkbox">
+													<i></i>
+												</label>
+											</td>
+											<td>TM0035</td>
+											<td class="left">통제기간명</td>
+											<td>2019.01.28</td>
+										</tr>
+										<tr>
+											<td>
+												<label class="inputChk">
+													<input type="checkbox">
+													<i></i>
+												</label>
+											</td>
+											<td>TM0035</td>
+											<td class="left">통제기간명</td>
+											<td>2019.01.28</td>
+										</tr>
+										<tr>
+											<td>
+												<label class="inputChk">
+													<input type="checkbox">
+													<i></i>
+												</label>
+											</td>
+											<td>TM0035</td>
+											<td class="left">통제기간명</td>
+											<td>2019.01.28</td>
+										</tr>
+										<tr>
+											<td>
+												<label class="inputChk">
+													<input type="checkbox">
+													<i></i>
+												</label>
+											</td>
+											<td>TM0035</td>
+											<td class="left">통제기간명</td>
+											<td>2019.01.28</td>
+										</tr>
+										<tr>
+											<td>
+												<label class="inputChk">
+													<input type="checkbox">
+													<i></i>
+												</label>
+											</td>
+											<td>TM0035</td>
+											<td class="left">통제기간명</td>
+											<td>2019.01.28</td>
+										</tr>
+										<tr>
+											<td>
+												<label class="inputChk">
+													<input type="checkbox">
+													<i></i>
+												</label>
+											</td>
+											<td>TM0035</td>
+											<td class="left">통제기간명</td>
+											<td>2019.01.28</td>
+										</tr>
+										<tr>
+											<td>
+												<label class="inputChk">
+													<input type="checkbox">
+													<i></i>
+												</label>
+											</td>
+											<td>TM0035</td>
+											<td class="left">통제기간명</td>
+											<td>2019.01.28</td>
+										</tr>
+										<tr>
+											<td>
+												<label class="inputChk">
+													<input type="checkbox">
+													<i></i>
+												</label>
+											</td>
+											<td>TM0035</td>
+											<td class="left">통제기간명</td>
+											<td>2019.01.28</td>
+										</tr>
+										<tr>
+											<td>
+												<label class="inputChk">
+													<input type="checkbox">
+													<i></i>
+												</label>
+											</td>
+											<td>TM0035</td>
+											<td class="left">통제기간명</td>
+											<td>2019.01.28</td>
 										</tr>
 									</table>
 								</div>
-								<p class="tableResult">전체항목 : 0</p>
 							</div>
+							<div class="btnWrap">
+								<button type="button" class="btnTypeM">강제종료</button>
+							</div>	
 						</div>
 						<div class="box">
-							<h3 class="subTitle2">감사원 접속이력</h3>
-							<div class="scrollTable">
-								<div class="thead">
-									<table class="tableType">
-										<colgroup>
-											<col style="width:33.33%;">
-											<col style="width:33.33%;">
-											<col style="width:33.33%;">
-										</colgroup>
+							<div>
+								<table class="tableTypeInput">
+									<colgroup>
+										<col style="width: 132px;">
+										<col>
+									</colgroup>
+									<tbody>
 										<tr>
-											<th scope="col">접속일시</th>
-											<th scope="col">감사원 ID</th>
-											<th scope="col">감사원명</th>
-										</tr>
-									</table>
-								</div>
-								<div class="tbody" style="max-height: 288px;">
-									<table class="tableType">
-										<colgroup>
-											<col style="width:33.33%;">
-											<col style="width:33.33%;">
-											<col style="width:33.33%;">
-										</colgroup>
-										<tr>
-											<td></td>
-											<td></td>
-											<td></td>
+											<th scope="row">통제기간</th>
+											<td><input type="text" class="inputTxt" style="width:50%;"></td>
 										</tr>
 										<tr>
-											<td></td>
-											<td></td>
-											<td></td>
+											<th scope="row">통제기간명</th>
+											<td><input type="text" class="inputTxt" style="width:50%;"></td>
 										</tr>
 										<tr>
-											<td></td>
-											<td></td>
-											<td></td>
+											<th scope="row">평가대상기간</th>
+											<td>
+												<select style="width:100px;">
+													<option value="">2019년</option>
+												</select>
+												<select style="width:80px;">
+													<option value="">12월</option>
+												</select>
+												~
+												<select style="width:100px;">
+													<option value="">2019년</option>
+												</select>
+												<select style="width:80px;">
+													<option value="">12월</option>
+												</select>
+											</td>
 										</tr>
 										<tr>
-											<td></td>
-											<td></td>
-											<td></td>
+											<th scope="row">최종보고일</th>
+											<td>
+												<input type="text" class="inputTxt" style="width:50%;">
+												<button type="button" class="btnCal">날짜선택</button>
+											</td>
 										</tr>
-									</table>
-								</div>
-								<p class="tableResult">전체항목 : 0</p>
+										<tr>
+											<th scope="row">통제유형</th>
+											<td>
+												<label class="inputChk">
+													<input type="checkbox"><i></i>
+													<span>자가진단</span>
+												</label>
+												<label class="inputChk">
+													<input type="checkbox"><i></i>
+													<span>운영효과성평가</span>
+												</label>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">특기사항</th>
+											<td>
+												<textarea cols="30" rows="10" style="height: 125px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">진행상태</th>
+											<td><input type="text" class="inputTxt" style="width:50%;"></td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
+							<div class="btnWrap">
+								<button type="button" class="btnTypeM1">추가</button>
+								<button type="button" class="btnTypeM">저장</button>
+								<button type="button" class="btnTypeM">수정</button>
+								<button type="button" class="btnTypeM1">삭제</button>
+							</div>	
 						</div>
 					</section>
 
