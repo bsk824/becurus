@@ -20,7 +20,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav
 
 select {
 	width: 440px;
-	height: 34px;
+	height: 30px;
 	padding-left: 15px;
 	background: #fff url(../images/bg_sel.png) no-repeat 100% 50%;
 	border: 1px solid #dddce1;
@@ -28,7 +28,7 @@ select {
 	vertical-align: middle;
 }
 .inputTxt {
-	height: 34px;
+	height: 30px;
 	padding: 0 15px;
 	border: 1px solid #dddce1;
 	vertical-align: middle;
@@ -37,12 +37,12 @@ select {
 textarea {
 	width: 100%;
 	box-sizing: border-box;
-	padding: 15px;
+	padding: 10px 15px;
 	border: 1px solid #dddce1;
 	resize: none;
 	vertical-align: top;
 }
-.inputChk {cursor: pointer;}
+.inputChk {display: inline-block; cursor: pointer;}
 .inputChk input {
 	position: absolute;
 	visibility: hidden;
@@ -116,12 +116,20 @@ textarea {
 	font-size: 12px;
 }
 .btnTypeS1 {
-	height: 34px;
-	line-height: 34px;
+	height: 30px;
+	line-height: 30px;
 	padding: 0 12px;
 	background: #979aa4;
 	color: #fff;
-
+}
+.btnTypeS2 {
+	height: 34px;
+	line-height: 34px;
+	padding: 0 12px;
+	background: #fff;
+	border: 1px solid #979797;
+	color: #4b4a4a;
+	font-size: 13px;
 }
 .btnTypeM {
 	min-width: 113px;
@@ -146,6 +154,15 @@ textarea {
 	background: #fff;
 	border: 1px solid #bcc4c8;
 	color: #6a6a6a;
+}
+.btnTypeM3 {
+	min-width: 113px;
+	height: 38px;
+	line-height: 38px;
+	background: #3e4348;
+	border: 1px solid #3e4348;
+	color: #fff;
+	font-weight: 500;
 }
 .btnLogout {
 	padding-left: 40px;
@@ -176,6 +193,22 @@ textarea {
 	color: #4c4c4c;
 	font-size: 16px;
 }
+.subTitle4 {
+	margin: 20px 0 10px 7px;
+	font-size: 16px;
+	color: #545454;
+}
+.subTitle5 {
+	margin: 20px 0 5px;
+	font-size: 14px;
+	color: #585858;
+}
+.subTitle5 + .subTitle6 {margin-top: 0;}
+.subTitle6 {
+	margin: 25px 0 10px;
+	font-size: 13px;
+	color: #585858;
+}
 
 /* tableType */
 [class*="tableType"] th,
@@ -194,32 +227,61 @@ textarea {
 [class*="tableType"] td {
 	background: #fff;
 }
-[class*="tableType"] .center {
-	text-align: center;
+[class*="tableType"] .chkWrap [class*="input"] ~ [class*="input"] {
+	margin-left: 15px;
 }
+[class*="tableType"] .center,
 [class*="tableType"] .center th,
 [class*="tableType"] .center td {
+	padding-left: 0;
+	padding-right: 0;
 	text-align: center;
 }
 [class*="tableType"] .left,
 [class*="tableType"] .left th,
 [class*="tableType"] .left td {
-	padding: 0 25px;
+	padding-left: 25px;
+	padding-right: 25px;
 	text-align: left;
 }
 [class*="tableType"] .right,
 [class*="tableType"] .right th,
 [class*="tableType"] .right td {
-	padding: 0 25px;
+	padding-left: 25px;
+	padding-right: 25px;
 	text-align: right;
+}
+[class*="tableType"] tfoot th {
+	background: #e6eeef;
+	text-align: center;
+}
+[class*="tableType"] tfoot td {
+	background: #e6eeef;
+	color: #046a9b;
+	font-weight: bold;
+	text-align: center;
 }
 .tableTypeInput th,
 .tableTypeInput td {
+	height: 30px;
 	text-align: left;
-	padding: 5px;
+	padding: 10px;
+	font-size: 13px;
 }
 .tableTypeInput th {padding-left:20px;}
 .tableTypeInput tr:hover td {background: #fff;}
+
+.tableTypeView th,
+.tableTypeView td {
+	font-size: 12px;
+	text-align: center;
+	border-right: 0;
+}
+.tableTypeView th:first-child,
+.tableTypeView td:first-child {
+	border-left: 0;
+}
+.tableTypeView tr:hover td {background: #fff;}
 
 .scrollTable .thead {
 	position: relative;
@@ -403,6 +465,7 @@ textarea {
 	display: block;
 	clear: both;
 }
+.section2 {margin-top: 20px !important;}
 .section .subTitle {
 	font-size: 21px;
 	font-weight: normal;
@@ -415,4 +478,59 @@ textarea {
 	width: 50%;
 	padding: 0 17px;
 	box-sizing: border-box;
+}
+.tableWrap:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.tableWrap table {
+	float: left;
+}
+.tableWrap table ~ table {
+	margin-left: 20px;
+}
+
+.lineBox {
+	margin: 20px 0 0;
+	padding: 25px;
+	border: 1px solid #c2c2c2;
+}
+.lineBox .txt {font-size: 12px;}
+
+/* layer */
+.layerWrap {
+	position: fixed;
+	top: 0; right:0; bottom: 0; left: 0;
+	z-index: 1000;
+	background: rgba(0,0,0,.2);
+	overflow: auto;
+	text-align: center;
+}
+.layerWrap:after {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.layerSection {
+	display: inline-block;
+	width: 960px;
+	margin: 20px 0;
+	background: #fff;
+	text-align: left;
+	vertical-align: middle;
+}
+[class*="layerTitle"] {
+	padding: 20px 30px;
+	background: #478fb1;
+	color: #fff;
+	font-size: 18px;
+	font-weight: normal;
+}
+.layerTitle2 {
+	background: #4b4b4b;
+}
+.layerContents {
+	padding: 20px 20px 50px 20px;
 }

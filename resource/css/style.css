@@ -495,6 +495,14 @@
 	top: 6px;
 	border-top: 9px solid #757575;
 }
+.btnControl .btnRight:after {
+	right: -4px;
+	border-left: 9px solid #757575;
+}
+.btnControl .btnLeft:after {
+	left: -4px;
+	border-right: 9px solid #757575;
+}
 
 .selList .tit {
 	background: #f9f9f9;
@@ -519,4 +527,62 @@
 }
 .selList .total {
 	margin: 10px 0 0 30px;
+}
+
+.resultBox:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.resultBox .box {
+	float: left;
+}
+.resultBox .box + .box {
+	margin-left: 20px;
+}
+.resultBox .contBox {
+	height: 160px;
+	padding: 10px 15px;
+	box-sizing: border-box;
+	border: 1px solid #dedede;
+}
+.resultBox .file p {
+	margin: 0 0 5px;
+	font-weight: bold;
+}
+.resultReport dt {
+	margin: 30px 0 0;
+}
+.resultReport dd {
+	margin: 10px 0 0;
+	padding: 30px;
+	border: 1px solid #dedede;
+}
+.resultReport .ex {
+	display: block;
+	margin: 5px 0 0;
+}
+
+.movWrap:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.movWrap .selList {
+	float: left;
+	width: 420px;
+	text-align: center;
+}
+.movWrap .btnControl {
+	width: 80px;
+	margin-top: 130px;
+	float: left;
+}
+.movWrap .btnControl button {
+	margin: 6px 20px;
+	width: 32px;
+	height: 27px;
+}
+.movWrap .selList button {
+	text-align: center;
 }

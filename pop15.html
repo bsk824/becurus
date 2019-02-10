@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="resource/font/ng.css">
+	<link rel="stylesheet" type="text/css" href="resource/css/common.css">
+	<link rel="stylesheet" type="text/css" href="resource/css/style.css">
+	<script type="text/javascript" src="resource/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="resource/js/ui.js"></script>
+	<!--[if lt IE 9]>
+		<script src="resource/js/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<div id="wrap">
+		
+		<!-- header -->
+		<header id="header">
+			<h1 class="logo"><a href="#"><img src="resource/images/img_logo.png" alt="비큐러스"></a></h1>
+			<p class="status">
+				<span class="txt"><a href="#">운영자</a>님이 로그인 하셨습니다.</span>
+				<a href="#" class="btnTypeS btnLogout">LOGOUT</a>
+			</p>
+			<a href="#" class="btnTypeS btnMenual">메뉴얼 다운로드</a>
+		</header>
+		<!-- //header -->
+		<!-- container -->
+		<div id="container">
+			<!-- lnb -->
+			<nav id="lnb">
+				<ul>
+					<li><a href="#" class="menuIcon01">대시보드</a></li>
+					<li class="open"><a href="#" class="menuIcon02">운영정보</a>
+						<div class="subMenu">
+							<ul>
+								<li><a href="#">통제기간/유형설정</a></li>
+								<li><a href="#">통제기간/유형설정</a></li>
+								<li class="open"><a href="#">부서사용자관리</a>
+									<div class="subMenu">
+										<ul>
+											<li class="on"><a href="#">부서관리</a></li>
+											<li><a href="#">사용자관리</a></li>
+											<li><a href="#">결재선관리</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" class="menuIcon03">기준정보</a>
+						<div class="subMenu">
+							<ul>
+								<li><a href="#">유의한계정과목선정</a>
+									<div class="subMenu">
+										<ul>
+											<li><a href="#">시산표업로드</a></li>
+											<li><a href="#">양적요소 판단기준설정/적용</a></li>
+											<li><a href="#">질적요소 판단기준설정/적용</a></li>
+											<li><a href="#">유의한계정과목</a></li>
+											<li><a href="#">유의한주석정보</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="#">업무프로세스관리</a>
+									<div class="subMenu">
+										<ul>
+											<li><a href="#">업무프로세스관리</a></li>
+											<li><a href="#">관련계정과목지정</a></li>
+											<li><a href="#">관련부서지정</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="#">설계문서관리</a>
+									<div class="subMenu">
+										<ul>
+											<li><a href="#">전산통제 설계문서</a></li>
+											<li><a href="#">프로세스설계문서</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="#">통제항목관리</a>
+									<div class="subMenu">
+										<ul>
+											<li><a href="#">전사적수준 통제항목</a>
+												<div class="subMenu">
+													<ul>
+														<li><a href="#">통제항목관리</a></li>
+														<li><a href="#">통제항목별 책임부서지정</a></li>
+													</ul>
+												</div>
+											</li>
+											<li><a href="#">프로세스수전통제항목</a>
+												<div class="subMenu">
+													<ul>
+														<li><a href="#">통제항목관리</a></li>
+														<li><a href="#">통제항목별 책임부서지정</a></li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" class="menuIcon04">설계효과성 평가</a>
+						<div class="subMenu">
+							<ul>
+								<li><a href="#">전사적수준 설계평가</a>
+									<div class="subMenu">
+										<ul>
+											<li><a href="#">평가/검토자 지정</a></li>
+											<li><a href="#">설계평가항목 배포</a></li>
+											<li><a href="#">설계평가 수행</a></li>
+											<li><a href="#">평가결과 검토</a></li>
+											<li><a href="#">설계평가 미비점개선</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="#">프로세스수준 설계평가</a>
+									<div class="subMenu">
+										<ul>
+											<li><a href="#">평가대상 프로세스 선정</a></li>
+											<li><a href="#">평가/검토자 지정</a></li>
+											<li><a href="#">설계평가항목 배포</a></li>
+											<li><a href="#">설계평가 수행</a></li>
+											<li><a href="#">평가결과 검토</a></li>
+											<li><a href="#">설계평가 미비점개선</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" class="menuIcon05">운영효과성 평가</a>
+						<div class="subMenu">
+							<ul>
+								<li><a href="#">전사적수준 설계평가</a>
+									<div class="subMenu">
+										<ul>
+											<li><a href="#">전사평가항목 선정</a></li>
+											<li><a href="#">전사평가담당자 지정</a></li>
+											<li><a href="#">전사평가항목 배포</a></li>
+											<li><a href="#">전사평가 수행</a></li>
+											<li><a href="#">전사평가 결과검토</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="#">프로세스수준 운영평가</a>
+									<div class="subMenu">
+										<ul>
+											<li><a href="#">운영평가 대상항목 선정</a></li>
+											<li><a href="#">PASS기준 설정</a></li>
+											<li><a href="#">운영평가 담당자 지정</a></li>
+											<li><a href="#">운영평가 항목 배포</a></li>
+											<li><a href="#">운영평가 수행</a></li>
+											<li><a href="#">운영평가 결과검토</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" class="menuIcon06">평가결과 보고</a>
+						<div class="subMenu">
+							<ul>
+								<li><a href="#">미비점 개선관리</a>
+									<div class="subMenu">
+										<ul>
+											<li><a href="#">미비점 개션계획 수립</a></li>
+											<li><a href="#">미비점 개선결과 입력</a></li>
+											<li><a href="#">미비점 개선현황</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="#">운영실태평가 보고</a>
+									<div class="subMenu">
+										<ul>
+											<li><a href="#">취합부서 지정</a></li>
+											<li><a href="#">평가결과 취합</a></li>
+											<li><a href="#">운영평가결과서 보고</a></li>
+											<li><a href="#">운영실태평가보고서 검토</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="#">이행평가보고</a>
+									<div class="subMenu">
+										<ul>
+											<li><a href="#">평가 대상항목 선정</a></li>
+											<li><a href="#">평가담당자 지정</a></li>
+											<li><a href="#">이행평가 실시</a></li>
+											<li><a href="#">이행평가 결과 검토</a></li>
+											<li><a href="#">이행평가 취합보고</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" class="menuIcon07">결제함</a>
+						<div class="subMenu">
+							<ul>
+								<li><a href="#">결재상신함</a>
+									<div class="subMenu">
+										<ul>
+											<li><a href="#">전사설계평가</a></li>
+											<li><a href="#">설계평가</a></li>
+											<li><a href="#">전사운영평가</a></li>
+											<li><a href="#">운영평가</a></li>
+											<li><a href="#">운영실태평가보고서</a></li>
+											<li><a href="#">이행평가</a></li>
+											<li><a href="#">이행평가보고서</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="#">결재대상함</a>
+									<div class="subMenu">
+										<ul>
+											<li><a href="#">전사설계평가</a></li>
+											<li><a href="#">설계평가</a></li>
+											<li><a href="#">전사운영평가</a></li>
+											<li><a href="#">운영평가</a></li>
+											<li><a href="#">운영실태평가보고서</a></li>
+											<li><a href="#">이행평가</a></li>
+											<li><a href="#">이행평가보고서</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" class="menuIcon08">admin</a>
+						<div class="subMenu">
+							<ul>
+								<li><a href="#">시스템관리</a>
+									<div class="subMenu">
+										<ul>
+											<li><a href="#">권한관리</a></li>
+											<li><a href="#">코드관리</a></li>
+											<li><a href="#">메뉴관리</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<script>
+				lnb();
+			</script>
+			<!-- //lnb -->
+			<!-- contents -->
+			<div id="contents">
+
+				<div class="contHead">
+					<button type="button" class="btnMenu" onclick="$('#container').toggleClass('menuOff')">메뉴</button>
+					<p class="loc"><span>운영정보</span> <span>통제기간/유형설정</span></p>
+				</div>
+
+				<div class="contBody">
+
+
+				</div>
+
+			</div>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+
+
+	<!-- popup -->
+	<div class="layerWrap">
+		<section class="layerSection">
+			<h2 class="layerTitle">결재</h2>
+			<!-- popup contents -->
+			<div class="layerContents">
+
+				<div class="scrollTable">
+					<div class="thead">
+						<table class="tableType">
+							<colgroup>
+								<col style="width: 20%;">
+								<col>
+							</colgroup>
+							<tr>
+								<th scope="col">결제단계</th>
+								<th scope="col">제목</th>
+							</tr>
+						</table>
+					</div>
+					<div class="tbody" style="max-height: 80px;">
+						<table class="tableType">
+							<colgroup>
+								<col style="width: 20%;">
+								<col>
+							</colgroup>
+							<tr>
+								<td>1단계</td>
+								<td class="left">[운영효과성평가] 매출 및 매출채권 오프라인매출_가격정보등록 및 매출 할인</td>
+							</tr>
+							<tr>
+								<td>1단계</td>
+								<td class="left">[운영효과성평가] 매출 및 매출채권 오프라인매출_가격정보등록 및 매출 할인</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+				<h3 class="subTitle4">결재의뢰</h3>
+				<div class="tableWrap">
+					<table class="tableTypeInput" style="width:490px;">
+						<colgroup>
+							<col style="width:20%;">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">결재의견</th>
+								<td>
+									<textarea cols="30" rows="10" style="height:120px;"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">비밀번호</th>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="tableTypeInput" style="width:390px;">
+						<colgroup>
+							<col style="width:20%;">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">사인</th>
+								<td>
+									<img src="resource/images/sample/sign_sample.jpg" alt="">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="btnWrap">
+					<span class="left">
+						<button type="button" class="btnTypeS2">이름</button>
+						<button type="button" class="btnTypeS2">서명</button>
+						<button type="button" class="btnTypeS2">도장</button>
+					</span>
+					<span class="right">
+						<button type="submit" class="btnTypeM3">결제완료</button>
+						<button type="button" class="btnTypeM1">닫기</button>
+					</span>
+				</div>
+			</div>
+			<!-- //popup contents -->
+		</section>
+	</div>
+	<!-- //popup -->
+</body>
+</html>
