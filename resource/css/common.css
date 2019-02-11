@@ -275,12 +275,14 @@ textarea {
 .tableTypeView td {
 	font-size: 12px;
 	text-align: center;
-	border-right: 0;
+	border-right-width: 0;
 }
 .tableTypeView th:first-child,
 .tableTypeView td:first-child {
-	border-left: 0;
+	border-left-width: 0;
 }
+.tableTypeView th.line,
+.tableTypeView td.line {border-left-width: 1px;}
 .tableTypeView tr:hover td {background: #fff;}
 
 .scrollTable .thead {
@@ -308,7 +310,6 @@ textarea {
 
 /* layout */
 #wrap {
-	min-width: 1600px;
 	position: absolute;
 	width: 100%;
 	min-height: 100%;
@@ -349,6 +350,7 @@ textarea {
 }
 
 #container {
+	min-width: 1500px;
 	padding-left: 210px;
 	transition: all .3s;
 }

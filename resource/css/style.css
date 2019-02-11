@@ -284,7 +284,7 @@
 	position: relative;
 	height: 111px;
 	margin: 0 10px;
-	padding: 0 20px 0 144px;
+	padding: 0 0 0 124px;
 	border: 1px solid transparent;
 	border-radius: 4px;
 	overflow: hidden;
@@ -328,6 +328,7 @@
 	display: block;
 	color: #fe7e28;
 	font-size: 30px;
+	font-weight: bold;
 }
 
 .progress {
